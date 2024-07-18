@@ -139,8 +139,12 @@
       color: #ccc;
     }
 
+    .namaku{
+      color: #20b5ff;
+    }
+
     .icon-sosmed a:hover {
-      color: #2572c0;
+      color: #20b5ff;
     }
   </style>
 </head>
@@ -170,12 +174,15 @@
           <div class="col-md-6 p-5">
             <div class="intro">
               <h1 class="fs-1 fw-bold text-light">Hello Everyone!!</h1>
-              <p class="fs-4 fw-bold text-light">
-                I'm Rodhi, from Pasuruan City, majoring in software
+              <p class="fs-4  text-light">
+                I'm Rodhi, majoring in software
                 engineering
               </p>
               <div class="namaku">
-                <h2 class="fs-1 fw-bold text-primary">Rodhi Firmansyah</h2>
+                <h2 class="fs-1 fw-bold">
+                  <!-- Add a span for typing animation -->
+                  <span id="typed-text"></span>
+                </h2>
               </div>
 
               <!-- Social Media Icons -->
@@ -207,7 +214,7 @@
   <section id="about" class="bg-white ">
     <div class="page-about">
       <div class="container">
-        <h1 class="section-title">ACHIEVEMENT!</h1>
+        <h1 class="section-title">Achievement</h1>
         <div class="row">
           <div class="col-md-6">
             <div class="card mb-4 same-height-card">
@@ -300,10 +307,6 @@
           </div>
         </div>
 
-
-
-
-
       </div>
     </div>
     </div>
@@ -371,6 +374,35 @@
           }
         });
       });
+
+      function typeWriter(text, i, fnCallback) {
+        if (i < text.length) {
+          // Add next character to span
+          document.getElementById("typed-text").innerHTML = text.substring(0, i + 1) + '<span aria-hidden="true"></span>';
+
+          // Wait for a while and call this function again for next character
+          setTimeout(function () {
+            typeWriter(text, i + 1, fnCallback)
+          }, 100); // Adjust typing speed here
+        } else if (typeof fnCallback == 'function') {
+          // Call callback after typing is done
+          setTimeout(fnCallback, 700);
+        }
+      }
+
+      // Start typing animation for element with id 'typed-text'
+      function startTextAnimation() {
+        var text = "Rodhi Firmansyah"; // Your text here
+        if (text) {
+          typeWriter(text, 0, function () {           
+              document.getElementById("typed-text").innerHTML = "";
+              startTextAnimation();
+          });
+        }
+      }
+
+      startTextAnimation();
+
     });
   </script>
 </body>
