@@ -4,10 +4,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Rodhi Firmansyah</title>
+  <title>Rodhi Firmansyah Akhmad</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-  <link rel="shortcut icon" href="https://img.icons8.com/?size=100&id=ftgzqv4ry3uF&format=png&color=000000" type="png">
+    <link rel="shortcut icon" href="https://img.icons8.com/?size=100&id=ftgzqv4ry3uF&format=png&color=000000" type="png">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
   <!-- Font Awesome -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
@@ -143,7 +143,7 @@
       color: #ccc;
     }
 
-    .namaku {
+    .namaku{
       color: #20b5ff;
     }
 
@@ -245,25 +245,27 @@
             <div class="card mb-4 same-height-card">
               <img src="img/achievement_3.jfif" class="card-img-top" alt="Achievement 2" />
               <div class="card-body">
+                <p class="card-text">Partisipasi Bootcamp LKS di PT UNIVERSAL BIG DATA</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="card mb-4 same-height-card">
+              <img src="img/achievement_4.jfif" class="card-img-top" alt="Achievement 1" />
+              <div class="card-body">
                 <p class="card-text">
-                  Partisipasi Bootcamp LKS di PT UNIVERSAL BIG DATA
+                  UPT PTKK Prov jatim angkatan 1 2024
                 </p>
               </div>
             </div>
           </div>
           <div class="col-md-5">
             <div class="card mb-4 same-height-card">
-              <img src="img/achievement_4.jfif" class="card-img-top" alt="Achievement 2" />
+              <img src="img/achievement_5.jfif" class="card-img-top" alt="Achievement 1" />
               <div class="card-body">
-                <p class="card-text">UPT PTKK Prov jatim angkatan 1 2024</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-5">
-            <div class="card mb-4 same-height-card">
-              <img src="img/achievement_5.jfif" class="card-img-top" alt="Achievement 2" />
-              <div class="card-body">
-                <p class="card-text">Partisipasi Lomba scratch di UNIVERSITAS DINAMIKA</p>
+                <p class="card-text">
+                  Partisipasi Lomba scratch di UNIVERSITAS DINAMIKA
+                </p>
               </div>
             </div>
           </div>
@@ -275,59 +277,104 @@
   <section id="project" class="bg-light ">
     <div class="page-project">
       <div class="container">
-        <h1 class="section-title">Project</h1>
-        <!-- isi -->
+        <h1 class="section-title">Projects</h1>
+          <!-- isi -->
       </div>
+    </div>
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2024 Rodhi Firmansyah Akhmad. All rights reserved.</p>
+    <p>&copy; 2024 Rodhi Firmansyah. All Rights Reserved.</p>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz4fnFO9gybBogGzOgHTsuN1pSv1KUR9MBesD8POTwGo4mYl5YkLfZOJp8"
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-    integrity="sha384-DBjhmce8HI8MyHBylbE3vvJoZ1Ttr13lq2dI8Go7C53Y5hPJVOBlKURy9Bv1WTRi"
-    crossorigin="anonymous"></script>
-
-  <!-- Add the typed.js library -->
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script>
-    // Initialize the typing animation
-    var typed = new Typed('#typed-text', {
-      strings: ['Rodhi Firmansyah'],
-      typeSpeed: 100,
-      backSpeed: 50,
-      loop: true
-    });
-
-    // Navbar scroll behavior
-    window.addEventListener("scroll", function () {
-      var navbar = document.querySelector(".navbar");
-      if (window.scrollY > 0) {
-        navbar.classList.add("scrolled");
-      } else {
-        navbar.classList.remove("scrolled");
-      }
-    });
-
-    // Ensure all cards have the same height
     document.addEventListener("DOMContentLoaded", function () {
-      var maxHeight = 0;
-      var cards = document.querySelectorAll(".same-height-card");
-
-      cards.forEach(function (card) {
-        var cardHeight = card.offsetHeight;
-        if (cardHeight > maxHeight) {
-          maxHeight = cardHeight;
+      // Mengatur event listener untuk mengubah warna navbar saat di-scroll
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > 50) {
+          document.querySelector(".navbar").classList.add("scrolled");
+        } else {
+          document.querySelector(".navbar").classList.remove("scrolled");
         }
       });
 
-      cards.forEach(function (card) {
-        card.style.height = maxHeight + "px";
+      // Smooth scroll ke bagian yang sesuai saat navbar di-klik
+      document.querySelectorAll(".nav-link").forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          // Menghapus kelas 'active' dari semua 'nav-link'
+          document.querySelectorAll(".nav-link").forEach((link) => {
+            link.classList.remove("active");
+          });
+
+          // Menambahkan kelas 'active' ke nav-link yang sedang diklik
+          this.classList.add("active");
+
+          // Smooth scroll ke bagian yang sesuai
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
       });
+
+      // Mengecek posisi bagian yang aktif saat pengguna menggulir halaman
+      window.addEventListener("scroll", function () {
+        // Ambil posisi scroll
+        let scrollPosition = window.scrollY;
+
+        // Loop melalui setiap bagian dan memeriksa posisi scroll
+        document.querySelectorAll("section").forEach((section) => {
+          let sectionTop = section.offsetTop - 72; // Offset navbar height
+
+          if (
+            scrollPosition >= sectionTop &&
+            scrollPosition < sectionTop + section.offsetHeight
+          ) {
+            let id = section.getAttribute("id");
+            document.querySelectorAll(".nav-link").forEach((link) => {
+              if (link.getAttribute("href") === `#${id}`) {
+                link.classList.add("active");
+              } else {
+                link.classList.remove("active");
+              }
+            });
+          }
+        });
+      });
+
+      function typeWriter(text, i, fnCallback) {
+        if (i < text.length) {
+          // Add next character to span
+          document.getElementById("typed-text").innerHTML = text.substring(0, i + 1) + '<span aria-hidden="true"></span>';
+
+          // Wait for a while and call this function again for next character
+          setTimeout(function () {
+            typeWriter(text, i + 1, fnCallback)
+          }, 100); // Adjust typing speed here
+        } else if (typeof fnCallback == 'function') {
+          // Call callback after typing is done
+          setTimeout(fnCallback, 700);
+        }
+      }
+
+      // Start typing animation for element with id 'typed-text'
+      function startTextAnimation() {
+        var text = "Rodhi Firmansyah"; // Your text here
+        if (text) {
+          typeWriter(text, 0, function () {           
+              document.getElementById("typed-text").innerHTML = "";
+              startTextAnimation();
+          });
+        }
+      }
+
+      startTextAnimation();
+
     });
   </script>
 </body>
