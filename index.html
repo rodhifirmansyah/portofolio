@@ -159,6 +159,13 @@
       color: #20b5ff;
     }
 
+    .download{
+      background-color: black;    
+      border-radius: 15px;
+      text-align: center;
+      justify-content: center;  
+    }
+
     @media (max-width: 767.98px) {
       .card-img-home {
         margin: 0 auto;
@@ -205,6 +212,7 @@
           <a class="nav-link active" aria-current="page" href="#home">Home</a>
           <a class="nav-link" href="#Achievement">Achievement</a>
           <a class="nav-link" href="#project">Project</a>
+          <button class="nav-link btn btn-dark" id="downloadCvBtn">Download CV</button>
         </div>
       </div>
     </div>
@@ -380,6 +388,19 @@
         text: "thanks you",
       });
     })
+  </script>
+  <script>
+     document.getElementById('downloadCvBtn').addEventListener('click',  () => {
+        const fileUrl = 'asset/Development.pdf'; 
+        const link = document.createElement('a');
+        link.href = fileUrl;
+        link.download = 'Rodhi-CV.pdf'; 
+
+        document.body.appendChild(link);
+        link.click();
+
+        document.body.removeChild(link);
+      });
   </script>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
