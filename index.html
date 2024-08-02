@@ -16,6 +16,7 @@
     body {
       font-family: "Poppins", sans-serif;
       align-items: center;
+      overflow-x: hidden;
     }
 
     .navbar {
@@ -66,7 +67,7 @@
 
     }
 
-    .page-about {
+    .page-Achievement {
       margin-top: 40px;
       display: flex;
       flex-direction: column;
@@ -74,7 +75,7 @@
     }
 
     .page-project {
-      margin-top: 20px;
+      margin-top: 0px;
     }
 
     .section-title {
@@ -96,9 +97,10 @@
       margin-top: 60px;
     }
 
-    .no-wrap {
+    .no-wrap{
       white-space: nowrap;
     }
+    
 
     .card {
       transition: transform 0.3s, box-shadow 0.3s;
@@ -169,6 +171,7 @@
       .page-home .row {
         flex-direction: column-reverse;
         text-align: center;
+        
       }
 
       .intro {
@@ -201,7 +204,7 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ms-auto">
           <a class="nav-link active" aria-current="page" href="#home">Home</a>
-          <a class="nav-link" href="#about">About</a>
+\          <a class="nav-link" href="#Achievement">Achievement</a>
           <a class="nav-link" href="#project">Project</a>
         </div>
       </div>
@@ -259,13 +262,42 @@
     </div>
   </section>
 
-  <section id="about" class="bg-white">
-    <div class="page-about">
+  <!-- <section id="about" class="bg-light">
+   <div class="page-about">
+    <div class="container ">
+      <div class="row vh-100 d-flex align-items-center justify-content-center">
+        <div class="col-md-4 p-0">
+          <img src="img/you.png" width="400" height="450" class="rounded-start-5 w-100" title="Coffee about"
+            style="object-fit: cover;" />
+        </div>
+        <div class="col-md-6 rounded-end-5 text-light px-4 pt-2" style="background: var(--bs-gray); height: 450px;">
+          <div class="text-container">
+            <h1 class="fs-1" style="color: black;">About</h1>
+            <hr />
+            <p class="fs-5" style="color: black;">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's
+              standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+              make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+              typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+              sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+              PageMaker
+              including versions of Lorem Ipsum.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+  </section> -->
+
+  <section id="Achievement" class="bg-white">
+    <div class="page-Achievement">
       <div class="container">
         <h1 class="section-title">Achievement</h1>
         <div class="row justify-content-center">
           <div class="col-md-5">
-            <div class="card mb-4 same-height-card" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1400"
+            <div class="card mb-4 same-height-card" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1400"
               data-aos-once="true">
               <img src="img/achievement_1.jpg" class="card-img-top" alt="Achievement 1" />
               <div class="card-body">
@@ -276,7 +308,7 @@
             </div>
           </div>
           <div class="col-md-5">
-            <div class="card mb-4 same-height-card" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1400"
+            <div class="card mb-4 same-height-card" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1400"
               data-aos-once="true">
               <img src="img/achievement_2.png" class="card-img-top" alt="Achievement 2" />
               <div class="card-body">
@@ -285,7 +317,7 @@
             </div>
           </div>
           <div class="col-md-5">
-            <div class="card mb-4 same-height-card" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1400"
+            <div class="card mb-4 same-height-card" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1400"
               data-aos-once="true">
               <img src="img/achievement_3.jfif" class="card-img-top" alt="Achievement 2" />
               <div class="card-body">
@@ -294,7 +326,7 @@
             </div>
           </div>
           <div class="col-md-5">
-            <div class="card mb-4 same-height-card" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1400"
+            <div class="card mb-4 same-height-card" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1400"
               data-aos-once="true">
               <img src="img/achievement_4.jfif" class="card-img-top" alt="Achievement 1" />
               <div class="card-body">
@@ -305,7 +337,7 @@
             </div>
           </div>
           <div class="col-md-5">
-            <div class="card mb-4 same-height-card" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1400"
+            <div class="card mb-4 same-height-card" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1400"
               data-aos-once="true">
               <img src="img/achievement_5.jfif" class="card-img-top" alt="Achievement 1" />
               <div class="card-body">
