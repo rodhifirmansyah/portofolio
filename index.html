@@ -55,7 +55,7 @@
       padding: 60px 0;
     }
 
-   
+
 
     .page-home {
       max-width: 1200px;
@@ -63,7 +63,7 @@
       padding: 0 20px;
       padding-top: 60px;
       height: 100vh;
-      
+
     }
 
     .page-about {
@@ -152,6 +152,29 @@
     .icon-sosmed a:hover {
       color: #20b5ff;
     }
+
+    @media (max-width: 767.98px) {
+      .card-img-home {
+        margin: 0 auto;
+        margin-bottom: 20px;
+        width: 40%;
+        max-width: 40%;
+        height: auto;
+      }
+
+      .page-home .row {
+        flex-direction: column-reverse;
+        text-align: center;
+      }
+
+      .intro {
+        margin: 0 auto;
+        margin-bottom: 20px;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+      }
+    }
   </style>
 </head>
 
@@ -211,7 +234,7 @@
                 </div>
               </div>
               <!-- Button for Projects -->
-              <a id="gabut"  class="btn btn-primary mt-3" data-aos="fade-up" data-aos-delay="200"
+              <a id="gabut" class="btn btn-primary mt-3" data-aos="fade-up" data-aos-delay="200"
                 data-aos-duration="1400" data-aos-once="true">Click</a>
             </div>
           </div>
@@ -290,7 +313,7 @@
       <div class="container">
         <h1 class="section-title">Projects</h1>
         <!-- isi -->
-        
+
       </div>
     </div>
     </div>
@@ -305,16 +328,16 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-    <script>
-      document.getElementById("gabut").addEventListener("click", ()=>{
-        Swal.fire({
-          imageUrl: "img/you.png",
-          imageHeight: 300,
-          title: "Helooo",
-          text: "thanks you",
-        });
-      })
-    </script>
+  <script>
+    document.getElementById("gabut").addEventListener("click", () => {
+      Swal.fire({
+        imageUrl: "img/you.png",
+        imageHeight: 300,
+        title: "Helooo",
+        text: "thanks you",
+      });
+    })
+  </script>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       // Mengatur event listener untuk mengubah warna navbar saat di-scroll
