@@ -178,6 +178,14 @@
         max-width: 100%;
         height: auto;
       }
+
+      .card{
+        margin: 0 20px;
+      }
+
+      .card-img-top{
+        height: 50%;
+      }
     }
   </style>
 </head>
@@ -401,7 +409,7 @@
       function typeWriter(text, i, fnCallback) {
         if (i < text.length) {
           // Add next character to span
-          document.getElementById("typed-text").innerHTML = text.substring(0, i + 1) + '<span aria-hidden="true" style="text-wrap: nowrap;"></span>';
+          document.getElementById("typed-text").innerHTML = text.substring(0, i + 1) + '<span aria-hidden="true"></span>';
 
           // Wait for a while and call this function again for next character
           setTimeout(function () {
