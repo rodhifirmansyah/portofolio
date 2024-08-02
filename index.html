@@ -397,7 +397,7 @@
       function typeWriter(text, i, fnCallback) {
         if (i < text.length) {
           // Add next character to span
-          document.getElementById("typed-text").innerHTML = text.substring(0, i + 1) + '<span aria-hidden="true" style="text-wrap: nowrap"></span>';
+          document.getElementById("typed-text").innerHTML = text.substring(0, i + 1) + '<span aria-hidden="true" style="text-wrap: nowrap;"></span>';
 
           // Wait for a while and call this function again for next character
           setTimeout(function () {
